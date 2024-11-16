@@ -5,8 +5,7 @@ exports.generatePdf = async(req,res)=>{
   try {
     
     // const browser = await puppeteer.launch();
-    process.env.PUPPETEER_CACHE_DIR = '/tmp/.puppeteer_cache'
-    console.log('Puppeteer Cache Directory:', process.env.PUPPETEER_CACHE_DIR);
+
 
     const browser = await puppeteer.launch({
         headless: true,  // Ensure Puppeteer runs in headless mode
