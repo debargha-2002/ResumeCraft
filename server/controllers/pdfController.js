@@ -3,17 +3,13 @@ const PDFtemplate = require('../template/pdfTemplate')
 const path = require("path")
 exports.generatePdf = async(req,res)=>{
   try {
-    
-   
-
-
     const browser = await puppeteer.launch({
-        headless: true,  // Ensure Puppeteer runs in headless mode
+        headless: true,  
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
-          '--disable-dev-shm-usage',   // Important for cloud environments
-          '--disable-software-rasterizer' // Can help in some cases
+          '--disable-dev-shm-usage',  
+          '--disable-software-rasterizer' 
         ]
       });
       
