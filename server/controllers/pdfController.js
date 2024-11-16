@@ -4,7 +4,7 @@ const path = require("path")
 exports.generatePdf = async(req,res)=>{
   try {
     
-    // const browser = await puppeteer.launch();
+   
 
 
     const browser = await puppeteer.launch({

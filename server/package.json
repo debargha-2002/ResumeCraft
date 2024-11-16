@@ -7,7 +7,6 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "postinstall": "echo 'Running Puppeteer install' && npx puppeteer browsers install"
-    
   },
   "keywords": [],
   "author": "",
@@ -19,6 +18,6 @@
     "html-pdf": "^3.0.1",
     "nodemon": "^3.1.7",
     "path": "^0.12.7",
-    "puppeteer": "^23.7.1"
+    "puppeteer": "^23.8.0"
   }
 }
