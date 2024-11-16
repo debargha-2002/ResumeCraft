@@ -4,7 +4,11 @@ const path = require("path")
 exports.generatePdf = async(req,res)=>{
   try {
     
-    const browser = await puppeteer.launch();
+    // const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'] // Important for cloud environments
+      });
     const page = await browser.newPage();
     
    console.log(req.body)
