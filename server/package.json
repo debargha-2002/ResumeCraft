@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-     "postinstall": "npx puppeteer browsers install"
+    "postinstall": "echo 'Running Puppeteer install' && npx puppeteer browsers install"
+    
   },
   "keywords": [],
   "author": "",

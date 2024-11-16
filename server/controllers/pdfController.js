@@ -5,10 +5,19 @@ exports.generatePdf = async(req,res)=>{
   try {
     
     // const browser = await puppeteer.launch();
+    process.env.PUPPETEER_CACHE_DIR = '/tmp/.puppeteer_cache'
+    console.log('Puppeteer Cache Directory:', process.env.PUPPETEER_CACHE_DIR);
+
     const browser = await puppeteer.launch({
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'] // Important for cloud environments
+        headless: true,  // Ensure Puppeteer runs in headless mode
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',   // Important for cloud environments
+          '--disable-software-rasterizer' // Can help in some cases
+        ]
       });
+      
     const page = await browser.newPage();
     
    console.log(req.body)
