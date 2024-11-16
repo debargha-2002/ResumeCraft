@@ -5,8 +5,8 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(cors({
-    origin:"*",
-    credentials:true
+    origin: "https://resume-craft-snowy.vercel.app",  // Only allow requests from this origin
+    credentials: true
 }));
 app.use(express.json());
 app.use("/api/v1",router)
