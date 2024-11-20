@@ -72,5 +72,22 @@ https://resume-craft-snowy.vercel.app/
 
 ## Screenshots
 Homepage
+
 ![App Screenshot](https://github.com/debargha-2002/modernchair/blob/main/Screenshot%202024-11-20%20173712.png)
+
+
+
+Create Resume
+
+![App Screenshot](https://github.com/debargha-2002/modernchair/blob/main/Screenshot%202024-11-20%20173821.png)
+
+
+Download Resume
+
+![App Screenshot](https://github.com/debargha-2002/modernchair/blob/main/Screenshot%202024-11-20%20173921.png)
+
+
+Resume Sample
+
+![App Screenshot](https://github.com/debargha-2002/modernchair/blob/main/Screenshot%202024-11-20%20195959.png)
 
